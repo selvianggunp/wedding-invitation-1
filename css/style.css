@@ -1,11 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Niconne&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Redressed&display=swap');
+
 @font-face 
 {
-  font-family: 'openSansBold'; /*memberikan nama bebas untuk font*/
-  src: url('../fonts/Open_Sans/static/OpenSans-Bold.ttf');/*memanggil file font eksternalnya di folder nexa*/
-  font-family: 'Niconne';
-  src: url('../fonts/Niconne/Niconne-Regular.ttf');
-  font-family: 'Redressed';
-  src: url('../fonts/Redressed/Redressed-Regular.ttf');
+  font-family: 'openSansBold'; 
+  src: url('../fonts/Open_Sans/static/OpenSans-Bold.ttf');
+
   font-family: 'licorice';
   src: url('../fonts/licorice/Licorice-Regular.ttf');
 }
@@ -13,10 +13,81 @@
 body{
   background-image: url(../img/sm.png);
   background-repeat: no-repeat;
+  background-color: #fedcc9ff;
 
 }
+/* left-top ------ */
+.atr-left-top{
+    position: relative;
+    width: 40%;
+    height: 100%;
+}
+.atr-left-top img{
+  max-width: 100%; 
+  position: absolute;
+  
+}
+
+/* right-top ------ */
+.atr-right-top{
+  float: right;
+  position: relative;
+  width: 40%;
+  height: 100%;
+}
+
+.atr-right-top img{
+  max-width: 100%; 
+  position: absolute;
+  right: 0; 
+}
+
+/* center-right  */
+.flower-center-right {
+ position: relative;
+ width: 40%;
+ height: 100%;
+ float: right;
+}
+
+.flower-center-right img{
+  float: right;
+  max-width: 100%; 
+  position: absolute;
+  top: 0px;
+  right: 0;
+}
+
+/* center-left  */
+.flower-center-left {
+  position: relative;
+  width: 40%;
+   height: 100%;
+ }
+ 
+ .flower-center-left img{
+   max-width: 100%; 
+   position: absolute;
+ }
+
+ /* flower-bottom */
+.flower-bottom {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.flower-bottom img{
+  max-width: 100%; 
+  position: absolute;
+}
+
 .jumbotron {
   background: transparent;
+}
+
+.opening{
+  margin-top: 40px;
 }
 
 .header .title  {
@@ -32,10 +103,9 @@ body{
   margin-top: 20px;
 }
 
-.footer h1, .header h1, .opening p, .send-gift .norek, .time p, .place p, .ayat p, .send-gift .ket p{
+.footer h3, .header h1, .opening p, .send-gift .norek, .time p, .place p, .ayat p, .send-gift .ket p{
  color: #ae7240ff;;
 }
-
 
 .header .date {
   font-family: 'Niconne';
@@ -61,11 +131,11 @@ body{
 .time{
   font-family: 'Niconne';
   font-weight: bold;
+  margin-top: 40px;
 }
 
 .time, .send-gift h1{
   color: #5a3830ff;
-  /* font-weight: bol; */
 }
 
 .place p{
@@ -73,7 +143,13 @@ body{
   margin-top: 50px;
 
 }
+.send-gift {
+  margin-top: -20px;
+}
 
+.send-gift img.flower-center-right{
+  position: absolute;
+}
 .send-gift h1{
   font-family: 'licorice';
   font-size: 70px;
@@ -84,22 +160,19 @@ body{
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
 }
-/* .send-gift img{
-  background-color: aqua;
+
+.ayat{
+  margin-top: 70px;
 }
-.send-gift .img, .send-gift .norek{
-background-color: sandybrown;
-} */
 
 .ayat p,  .send-gift .ket p{
   font-family: 'Niconne';
 }
 
-.footer h1{
+
+.footer h3{
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-weight: bold;
-  margin-top: -50px;
-  margin-bottom: 120px;
 }
 
 .title, .name-two, .date{
@@ -113,6 +186,8 @@ header h1.pmuncul, header h3.muncul {
 transform: translate(0, 0);
 }
 
+
+
 /* responsive */
 @media screen and (min-width: 520px) {
   body{
@@ -121,11 +196,6 @@ transform: translate(0, 0);
   }
   .ayat p{
     margin-top: -70px;
-  }
-
-  .footer h1{
-    margin-top: -150px;
-    margin-bottom: 70px;
   }
 
   .send-gift h1{
@@ -149,8 +219,8 @@ transform: translate(0, 0);
     margin-top: -50px;
   }
 
-  .footer h1{
-    margin-bottom: 200px;
+  .footer h3{
+    margin-top: 80px;
   }
-  
+
 }
