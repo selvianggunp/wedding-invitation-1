@@ -1,0 +1,156 @@
+@font-face 
+{
+  font-family: 'openSansBold'; /*memberikan nama bebas untuk font*/
+  src: url('../fonts/Open_Sans/static/OpenSans-Bold.ttf');/*memanggil file font eksternalnya di folder nexa*/
+  font-family: 'Niconne';
+  src: url('../fonts/Niconne/Niconne-Regular.ttf');
+  font-family: 'Redressed';
+  src: url('../fonts/Redressed/Redressed-Regular.ttf');
+  font-family: 'licorice';
+  src: url('../fonts/licorice/Licorice-Regular.ttf');
+}
+
+body{
+  background-image: url(../img/sm.png);
+  background-repeat: no-repeat;
+
+}
+.jumbotron {
+  background: transparent;
+}
+
+.header .title  {
+    font-family: 'Redressed';
+    font-weight: bold;
+    margin-top: 150px;
+    color: #aa8c73ff;
+  }
+
+.header h1{
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.footer h1, .header h1, .opening p, .send-gift .norek, .time p, .place p, .ayat p, .send-gift .ket p{
+ color: #ae7240ff;;
+}
+
+
+.header .date {
+  font-family: 'Niconne';
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.opening p, .two-name p{
+  margin-top: 6px;
+  font-family: 'Redressed';
+}
+
+.two-name{
+  color: #5a3830ff;
+}
+
+.two-name h1{
+  font-family: 'licorice';
+  font-weight: bold;
+
+}
+
+.time{
+  font-family: 'Niconne';
+  font-weight: bold;
+}
+
+.time, .send-gift h1{
+  color: #5a3830ff;
+  /* font-weight: bol; */
+}
+
+.place p{
+  font-family: 'Redressed';
+  margin-top: 50px;
+
+}
+
+.send-gift h1{
+  font-family: 'licorice';
+  font-size: 70px;
+  margin-top: 40px;
+}
+
+.send-gift .norek{
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+/* .send-gift img{
+  background-color: aqua;
+}
+.send-gift .img, .send-gift .norek{
+background-color: sandybrown;
+} */
+
+.ayat p,  .send-gift .ket p{
+  font-family: 'Niconne';
+}
+
+.footer h1{
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bold;
+  margin-top: -50px;
+  margin-bottom: 120px;
+}
+
+.title, .name-two, .date{
+  opacity: 1;
+  transform: translate(0, 60px);
+  transition: 1.3s; 
+} 
+
+header h1.pmuncul, header h3.muncul {
+  opacity: 0;
+transform: translate(0, 0);
+}
+
+/* responsive */
+@media screen and (min-width: 520px) {
+  body{
+    background-image: url(../img/md.png);
+    background-repeat: no-repeat;
+  }
+  .ayat p{
+    margin-top: -70px;
+  }
+
+  .footer h1{
+    margin-top: -150px;
+    margin-bottom: 70px;
+  }
+
+  .send-gift h1{
+    margin-top: -40px;
+  }
+}
+
+@media screen and (min-width: 720px) {
+  body{
+    background-image: url(../img/lg.png);
+    background-repeat: no-repeat;
+   background-position: -30px 0;
+  }
+  .send-gift .img {
+    text-align: right;
+  }
+  .send-gift .norek {
+    text-align: left;
+  }
+  .ayat p{
+    margin-top: -50px;
+  }
+
+  .footer h1{
+    margin-bottom: 200px;
+  }
+  
+}
